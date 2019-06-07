@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product App</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="nav-bar">Vue Intro Course</div>
+  <div id="app">
+    <div class="cart">
+      <p>Cart ({{ cart.length }})</p>
+    </div>
+    <product :premium="true" @add-to-cart="updateCart"></product>
+  </div>
+
+  <script src="../vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
